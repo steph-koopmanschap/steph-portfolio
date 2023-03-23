@@ -1,0 +1,27 @@
+{
+  "name": "steph-portfolio-website",
+  "version": "1.0.0",
+  "description": "Steph-Portfolio-Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss build -i index.css -o output.min.css --minify --watch",
+    "build": "npx tailwindcss build -i index.css -o output.min.css --minify",
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "developer",
+    "portfolio",
+    "fullstack"
+  ],
+  "private": true,
+  "author": "Steph Koopmanschap",
+  "license": "",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7",
+    "http-server": "^14.1.1"
+  }
+}

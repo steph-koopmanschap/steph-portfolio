@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box; 
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        color-scheme: light;
+    }
+    body {
+        color: black;
+        background: white;
+    }
+}
+
+@keyframes pinkBlackAnim {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes pinkBlackAnim-reverse {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes pinkBlackAnim-backwards {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes pinkBlackAnim-reverse-backwards {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes ChangeOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.moveBox {
+    animation: 2s linear 0s 1 forwards pinkBlackAnim;
+}
+
+.moveBox-backwards {
+    animation: 2s linear 0s 1 forwards pinkBlackAnim-backwards;
+}
+
+.moveBox-reverse {
+    animation: 2s linear 0s 1 forwards pinkBlackAnim-reverse;
+}
+
+.moveBox-reverse-backwards {
+    animation: 2s linear 0s 1 forwards pinkBlackAnim-reverse-backwards;
+}
+
+.changeOpacity {
+    animation: 3s linear 1s 1 forwards ChangeOpacity
+}
+
+.changeOpacityDelayed {
+    animation: 3s linear 3s 1 forwards ChangeOpacity
+}
+
+/* .dropdown-menu {
+    display: none;
+    visibility: hidden;
+}
+
+.dropdown-menu-head:hover .dropdown-menu {
+    visibility: visible;
+    display: flex;
+}
+
+.gallery-item {
+    padding: 0.3rem;
+} */
+
+
+
+
+
+
